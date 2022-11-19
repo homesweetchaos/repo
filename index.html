@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Skylin Hibler">
+<meta name="description" content="Lifestyle Blog">
+
+<!--Imports from web-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+    amzn_assoc_ad_type = "link_enhancement_widget";
+    amzn_assoc_tracking_id = "homesweetchao-20";
+    amzn_assoc_linkid = "c03e7812966d16d97597fca5ccaafa89";
+    amzn_assoc_placement = "";
+    amzn_assoc_marketplace = "amazon";
+    amzn_assoc_region = "US";
+</script>
+<script src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=US"></script>
+
+<title>Home Sweet Chaos</title>
+
+<!--My imports-->
+<link rel="stylesheet" href="blogStylesheet.css">
+<script src="blog.js"></script>
+</head>
+<body>
+
+    <!--Sidebar navigation-->
+    <nav class="w3-sidebar w3-bar-block w3-border-right w3-animate-left" style="display:none;z-index:5" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-left">Close
+            <span class="w3-right">&times;</span></button>
+
+            <button class="w3-button w3-block w3-left-align w3-left" onclick="myAccFunc('myAcc')">
+                Blog Categories <i class="fa fa-caret-down w3-right"></i>    
+            </button>
+            <div id="myAcc" class="w3-hide w3-white w3-card">
+                <a class="w3-bar-item w3-button" href="C:\Users\schid\Desktop\WebDev\homeSweetChaos\blogPosts.html">All Posts</a>
+                <a class="w3-bar-item w3-button" href="#">Mental Health</a>
+                <a class="w3-bar-item w3-button" href="#">Side Hustlin'</a>
+                <a class="w3-bar-item w3-button" href="#"><del>Whine</del> Wine with me</a>
+            </div>
+        <a class="w3-bar-item w3-button" href="C:\Users\schid\Desktop\WebDev\Portfolio\index.html">My Web Portfolio</a>
+        <a class="w3-bar-item w3-button" href="#">My Amazon Favs</a>
+        <a class="w3-bar-item w3-button" href="#">About Me</a>
+    </nav>
+
+<!--Background image for landing page -->
+<div class="bg" style="background-image:url(images/feathers.jpg);">
+    
+    <!--Navigation sidebar button-->
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" id="myOverlay"></div>
+    <button class="w3-button w3-xxlarge" onclick="w3_open()">&#9776;</button>
+    
+    <!--Container for center card.  I'm thinking of making it a slideshow.-->
+        <div class="w3-card-4 w3-display-middle w3-animate-opacity w3-white mycard">
+                <img src="images/logoTransparent.PNG" id="logo" class="w3-display-topmiddle" style="height: 50vh;" alt="logo">
+
+                    <h1 class="title w3-display-middle" style="padding-top:30vh;">By Skylin Hibler</h1>
+                    <p class="w3-display-middle" style="width: 80vw; padding-top: 50vh;">
+                    I'm a stay-at-home hot-mess mom of three, devoted wife, 
+                    entrepeneur, blogger, web-developer, writer, 
+                    and... <i>anything else my ADHD says I can be.</i></p>
+        </div>
+</div>
+</body>
+</html>

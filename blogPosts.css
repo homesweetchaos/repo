@@ -1,0 +1,166 @@
+/* Set page to fill the screen */
+html, body {
+    margin:0;
+    padding:0;
+    height: 400vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header fonts */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Sofia, serif;
+    color:#ffb4a1;
+}
+
+/* Paragraph formatting */
+p {
+    color:gray;
+    padding-left: 20px;
+}
+
+
+/* Sets a background image to cover the size of the screen.
+   use style="url()" inline html for the image. */
+   .bg {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-position: top;
+    background-size: cover;
+}
+
+/**************** Buttons ***************************************/
+/* Changes the color of the open accordian button */
+.activeColor {
+    background-color:rgb(253, 226, 184);
+}
+
+/* Buttons change color on hover */
+.w3-button:hover {
+    background-color: #ffb4a1 !important;
+}
+/****************************************************************/
+
+/**************** Welcome Message********************************/
+#welcome {
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    height: 100vh;
+}
+/****************************************************************/
+
+/**************** header bar ************************************/
+/* Center title formatting */
+.title {    
+    text-shadow: 0 1px 1px #444;
+    font-size: xxx-large
+    
+}
+
+#myHeaderBar {
+    background-color:#FFF6F7;
+    height: auto;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+
+.navButton {
+    height: 100%;
+    position: relative;
+}
+
+.dropdown {
+    height: 100%;
+    position: relative;
+}
+
+.dropContent {
+    
+}
+
+.dropSubContent {
+ 
+}
+/****************************************************************/
+
+
+/****** Side Navigation Menu ************************************/
+/* overlay dims page when menu is open and when 
+clicked (clicking off of menu) closes the menu */
+#myOverlay {
+    cursor: pointer;
+}
+
+#mySidebar {
+    width: 250px;
+    background-color: rgb(255, 246, 247);
+}
+
+#myAcc {
+    margin-left: 30px;
+}
+/****************************************************************/
+
+
+
+/**************** Footer ****************************************/
+#footer {
+    background-color:#444;
+    color: white;
+    padding: 20px;
+}
+
+.icon {
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.iconLink::before {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.iconButton {
+    background-color:#444;
+    color:white;
+    border:none;
+}
+/****************************************************************/
+
+
+/************* Media Formatting *********************************/
+@media only screen and (max-width: 600px){
+    #mySidebar {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .title {
+        font-size: x-large;
+    }
+}
+/****************************************************************/
+
+
+
+/**************** For troubleshooting ***************************/
+.border {
+    border-radius: 10px;
+    border-color: red;
+    border-style: solid;
+}
+
+.empty {
+    height:200%;
+    width: 100%;
+    z-index: -100;
+}
+/****************************************************************/

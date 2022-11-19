@@ -1,0 +1,172 @@
+/* Set page to fill the screen */
+html, body {
+    margin:0;
+    padding:0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header fonts */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Sofia, serif;
+    color:#ffb4a1;
+    }
+
+/* Paragraph formatting */
+p {
+    color:gray;
+    padding-left: 20px;
+    }
+
+/* Flex center an element horizontally */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.border {
+    border-radius: 10px;
+    border-color: red;
+    border-style: solid;
+}
+
+/* Changes the color of the open accordian button */
+.activeColor {
+    background-color:rgb(253, 226, 184);
+}
+
+/* Buttons change color on hover */
+.w3-button:hover {
+    background-color: #ffb4a1 !important;
+}
+
+/* Sets a background image to cover the size of the screen.
+   use style="url()" inline html for the image. */
+.bg {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-position: top;
+    background-size: cover;
+}
+
+/* Card formatting */
+.mycard {
+    padding: 8%;
+    width: 80vw;
+    height: 80vh;
+}
+
+/* Center title formatting */
+.title {    
+    text-align: center;
+    text-shadow: 0 1px 1px #444;
+    width: 100%;
+}
+
+/* All Posts list on the right side of the blog pages Attempting to 
+match them to the nav sidebar style. */
+.postButtons {
+    text-align: left;
+    background-color: #FFF6F7;
+}
+
+.collapse {
+    background-color: white;
+}
+
+#myHeaderBar {
+    background-color:#FFF6F7;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top:0;
+}
+
+#midSection {
+    margin-top: 75px;
+}
+
+.sideSection {
+    position: fixed;
+}
+/* This is the container for the postButtons on the blog pages
+and is fixed to the right side. */
+#postList {
+    background-color: FFF6F7;
+    position: fixed;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: #FFF6F7;
+}
+
+#blogSeriesHeader {
+    background-color: white;
+}
+
+#middleSection {
+    background-color: white;
+}
+
+
+
+
+
+/* sections outside of cards formatting - next 3 are specific to portfolio.html */
+.series {
+    width:"75%";
+}
+
+.paddingleft {
+    width: 25%;
+}
+
+.paddingright {
+    width: 25%;
+}
+
+/* overlay dims page when menu is open and when clicked (clicking off of menu) closes the menu */
+#myOverlay {
+    cursor: pointer;
+}
+
+#mySidebar {
+    width: 250px;
+    background-color: rgb(255, 246, 247);
+}
+
+
+#myAcc {
+    margin-left: 30px;
+}
+
+@media only screen and (max-width:600px){
+    #mySidebar {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+    .mycard {
+        width: 80vw;
+        height: 80vh;
+    }
+}
+
+/* Mobile Landscape */
+@media only screen
+    and (min-device-height: 600px)
+    and (orientation: landscape){
+        #logo {
+
+        }
+        .title {
+            
+        }
+    }

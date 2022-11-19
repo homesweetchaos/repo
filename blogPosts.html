@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Skylin Hibler">
+<meta name="description" content="Lifestyle Blog">
+
+<!--Imports from web-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/94989acb61.js" crossorigin="anonymous"></script>
+
+<title>Home Sweet Chaos</title>
+
+<!--My imports-->
+<link rel="stylesheet" href="blogPosts.css">
+<script src="blog.js"></script>
+</head>
+<body>
+<!--------------------------- Sidebar navigation -------------------------->
+    <nav class="w3-sidebar w3-bar-block w3-border-right w3-animate-left" style="display:none;z-index:5" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-left">Close
+            <span class="w3-right">&times;</span></button>
+
+            <button class="w3-button w3-block w3-left-align w3-left" onclick="myAccFunc('myAcc')">
+                Blog Categories<i class="fa-solid fa-caret-down w3-right"></i>    
+            </button>
+            <div id="myAcc" class="w3-hide w3-white w3-card">
+                <a class="w3-bar-item w3-button" href="C:\Users\schid\Desktop\WebDev\homeSweetChaos\allPosts.html">All Posts</a>
+                <a class="w3-bar-item w3-button" href="#">Mental Health</a>
+                <a class="w3-bar-item w3-button" href="#">Side Hustlin'</a>
+                <a class="w3-bar-item w3-button" href="#"><del>Whine</del> Wine with me</a>
+            </div>
+        <a class="w3-bar-item w3-button" href="C:\Users\schid\Desktop\WebDev\Portfolio\index.html">My Web Portfolio</a>
+        <a class="w3-bar-item w3-button" href="#">My Amazon Favs</a>
+        <a class="w3-bar-item w3-button" href="#">About Me</a>
+    </nav>
+
+
+
+
+<!----------------------------- Welcome Section ----------------------------->
+    <section id="welcome">
+        <h1 class="w3-jumbo">Home Sweet Chaos</h1>
+        <h1>the blog</h1>  
+    </section>
+
+<!--------------------------- Filter Header Bar ---------------------------->
+    <header class="w3-bar" id="myHeaderBar"> 
+        <h1 class="w3-bar-item w3-right title">Home Sweet Chaos</h1>
+        <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" id="myOverlay"></div>
+        <!--nav side menu-->
+        <button class="w3-bar-item w3-button w3-xxlarge" onclick="w3_open()">&#9776;</button>
+        
+        <!--first hover button-->
+        <div class="w3-dropdown-hover dropdown">
+            <button class="w3-button w3-bar-item w3-medium navButton">Browse by Date</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4 dropContent">
+                <div class="w3-dropdown-hover">
+                    <button class="w3-bar-item w3-button">October 2022
+                        <i class="fa-solid fa-caret-right w3-right"></i> 
+                    </button>
+                </div>
+                <a href="#" class="w3-bar-item w3-button">September 2022</a>
+                <a href="#" class="w3-bar-item w3-button">August 2022</a>
+            </div>
+        </div>
+
+        <!--second hover button-->
+        <div class="w3-dropdown-hover dropdown">
+            <button class="w3-button w3-bar-item w3-medium navButton">Browse by Category</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4 dropContent">
+                <div class="w3-dropdown-hover">
+                    <button class="w3-bar-item w3-button">Category 1
+                        <i class="fa-solid fa-caret-right w3-right"></i> 
+                    </button>
+                </div>
+                <a href="#" class="w3-bar-item w3-button">Category 2</a>
+                <a href="#" class="w3-bar-item w3-button">Category 3</a>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!--empty space for troubleshooting-->
+    <div class="empty">
+        
+    </div>
+<!-------------------------------- Footer ---------------------------------->
+    <footer class="w3-center container" id="footer">
+        <!--Social media icons font awesome-->
+            <a href="github.com/homesweetchaos" alt="GitHub" class="iconLink w3-tooltip">
+                <i class="fa-2x fa-brands fa-github icon"></i>
+                <span style="position:absolute;left:0;bottom:18px" class="w3-text w3-tag">GitHub</span>            
+            </a>
+            <a href="pinterest.com/homesweetchaos" alt="pinterest" class="w3-tooltip">
+                <i class="fa-2x fa-brands fa-pinterest icon"></i>
+                <span style="position:absolute;left:0;bottom:18px" class="w3-text w3-tag">Pinterest</span>                        
+            </a>
+            <a href="youtube.com/homeschoolofchaos" alt="Youtube channel" class="w3-tooltip">
+                <i class="fa-2x fa-brands fa-youtube icon"></i>
+                <span style="position:absolute;left:0;bottom:18px" class="w3-text w3-tag">YouTube Channel</span>                        
+            </a>
+            <a href="instagram.com/home_sweet_chaos" alt="Instagram" class="w3-tooltip">
+                <i class="fa-2x fa-brands fa-instagram icon"></i> 
+                <span style="position:absolute;left:0;bottom:18px" class="w3-text w3-tag">Instagram</span>                       
+            </a>
+            <a href="twitter.com/myhomesweetchaos" alt="Twitter" class="w3-tooltip">
+                <i class="fa-2x fa-brands fa-twitter icon"></i>   
+                <span style="position:absolute;left:0;bottom:18px" class="w3-text w3-tag">Twitter</span>                     
+            </a>
+            <a href="#" alt="Donate/Venmo" class="w3-tooltip">
+                <i class="fa-2x fa-solid fa-comment-dollar icon"></i>
+                <span style="position:absolute;left:0;bottom:18px" class="w3-text w3-tag">Donate via Venmo - Thank you!</span>            
+            </a>
+            <!--Footer author info-->
+        <div class="panel">
+            <p style="text-align:center; color:white;">Home Sweet Chaos |  Created September 2022 by Skylin Hibler</p>
+        </div>
+    </footer>
+
+</body>
+</html>

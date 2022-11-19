@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blog>
+    <post id="0001">
+       <date>
+            <month>September</month>
+            <day>17</day>
+            <year>2022</year>
+        </date>
+        <title>Side Hustlin' Experiment</title>
+        <tag>money<tag>
+        <content>C:\Users\schid\Desktop\WebDev\homeSweetChaos\posts.0001</content>
+    </post>
+
+    <post id="0002">
+        <date>
+            <month>Semptember</month>
+            <day>17</day>
+            <year>2022</year>
+        </date>
+        <title>Sunshine and Chaos</title>
+        <tag>chaos</tag>
+        <content>C:\Users\schid\Desktop\WebDev\homeSweetChaos\posts.0002</content>
+    </post>
+
+    <post id="0003">
+        <date>
+            <month>September</month>
+            <day>22</day>
+            <year>2022</year>
+        </date>
+        <title>Take a freaking shower!</title>
+        <tag>mental-health</tag>
+        <content>C:\Users\schid\Desktop\WebDev\homeSweetChaos\posts.0003</content>
+    </post>
+
+    <post id="0004">
+        <date>
+            <month>October</year>
+            <day>3</day>
+            <year>2022</year>
+        </date>
+        <title>What have you been up to, Sky?</title>
+        <content>C:\Users\schid\Desktop\WebDev\homeSweetChaos\posts.0004</content>
+    </post>
+</blog>
